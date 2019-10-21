@@ -2,7 +2,11 @@
 在本地创建一个文件夹叫test10.21 ,文件夹中应含有5个html文件,分别命名为1.html等.再创建一个readme.txt文件,将这几个问题贴如其中,最后将html中的js代码贴到答的下方.
 
 1.将两个字符利用字符串对象的方法变成一个字符,显示在页面id为h1的元素中
-答:
+答: 
+  var h1 = document.getElementByid('h1');
+  var str1 = '你好';
+  var str2 = '欢迎光临';
+  h1.innerHTML = str1.concat(str2)
 
 2.一个富豪想存87万,给理财顾问写了87w,请自动生成存储870000的方法,显示在页面id为h2的元素中
 答:
