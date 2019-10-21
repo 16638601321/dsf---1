@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--一个富豪想存87万,给理财顾问写了87w,请自动生成存储870000的方法,显示在页面id为h2的元素中-->
+		<input type="" name="inp" id="inp" value="" placeholder="输入存款金额"/>
+		<button id="btn">登录</button>
+		<h2 id="h2"></h2>
+		<script type="text/javascript">
+			var btn =document.getElementById('btn');
+			var inp = document.getElementById('inp');
+			var h2 = document.getElementById('h2');
+			document.getElementById('h2').onclick = function(){
+				h2.innerHTML = '存款金额'+inp.value.padEnd(6,0);
+			}
+		</script>
+	</body>
+</html>
